@@ -1,3 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>D3 Plotting</title>
+        <script type="text/javascript" src="./d3.js"></script>
+        <style type="text/css">
+                div.bar {
+display: inline-block;
+width: 20px;
+height: 75px;
+/* We'll override height later */
+background-color: red;
+}
+</style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            d3.select("body").append("p").text("New paragraph!");         
+        </script>
+        Hello <br/><br/>
+        <div style="display: inline-block;
+				width: 20px;
+				height: 75px;
+				background-color: blue;"></div>
+				
+	 <div class="bar"></div> <br>
+	 <script type="text/javascript">
+	 var dataset = [ 5, 10, 15, 20, 25 ];
+	 
+          /* d3.select("body").selectAll("div")
+					.data(dataset)
+					.enter()
+					.append("div")
+					.attr("class", "bar"); */
+					
+	d3.select("body").selectAll("div")  //only producing a bar chart with 3 columns, not 5. if the other 2 bars are deleted it works fine.
+					.data(dataset)
+					.enter()
+					.append("div")
+					.attr("class", "bar2")
+					.style("height", function(d) {
+					return (d*5) + "px";
+				});
+        </script>
+
+    </body>
+</html>
+
+
+<!--
 <!doctype html>
 <html lang="en">
 <head>
@@ -20,3 +71,5 @@
 
 </body>
 </html>
+
+-->
