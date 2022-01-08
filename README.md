@@ -14,4 +14,4 @@ Lauch Simple http-server in current directory: python -m http.server 9263
 
 ### Solved
 
-Haven't figured out how to plot multiple figures/graphs on one page. - used div to specfic location.
+Haven't figured out how to plot multiple figures/graphs on one page. - used div to specify location.
