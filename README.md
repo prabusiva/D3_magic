@@ -1,13 +1,11 @@
 # D3_magic
 
-https://prabusiva.github.io/D3_magic/
-
-## Reading Interactive Data Visualization for the Web with D3 by Scott Murray
+## Working through Interactive Data Visualization for the Web with D3 by Scott Murray
 
 Lauch Simple http-server in current directory: python -m http.server 9263
+    - So far haven't needed to use a http server for testing/development.
 
-@117
-/280
+@135/280
 
 ### Issues
 
